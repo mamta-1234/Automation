@@ -7,32 +7,33 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Autosuggestion {
+public class AutoSuggestion {
+	
 	public static void main(String[] args) throws InterruptedException {
-		
+		 
 		WebDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
-		 driver.get("https://www.google.com/");
-		 
-		 driver.findElement(By.xpath("//*[@name=\"q\"]")).sendKeys("selenium");
-		 
-		 Thread.sleep(2000);
-		 
-		List<WebElement> searchResults = driver.findElements(By.xpath("//*[text()='selenium']"));
 		
-		for(WebElement element:searchResults)
+		driver.get("https://www.facebook.com");
+		driver.findElement(By.linkText("Create new account")).click();
+		
+		Thread.sleep(2000);
+		
+		List<WebElement> yearValues = driver.findElements(By.xpath("//*[@id='year']/option"));
+		
+		int totalNumberOfValue = yearValues.size();
+		
+		System.out.println(totalNumberOfValue);
+		
+		for(WebElement yearvalue :yearValues)
 		{
-			String textvalue = element.getText();
+			String value=yearvalue.getText();
 			
-			System.out.println(textvalue);
-			
-			if(textvalue.equals("Selenium interview questions"))
-			{
-				element.click();
-			}
+			System.out.println(value);
 		}
 		
 		
 	}
+
 }
