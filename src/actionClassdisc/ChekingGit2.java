@@ -10,6 +10,8 @@ public class CheckinGit2 {
 		int k= j/i;
 		
 		System.out.println(k);
+
+System.out.println("code update from second user");
 	}
 
 }
