@@ -7,7 +7,7 @@ import java.io.IOException;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelReader {
+public class User2{
 	
 public static void main(String[] args) throws IOException {
 	
