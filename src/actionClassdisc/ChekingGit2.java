@@ -1,6 +1,6 @@
 package actionClassdisc;
 
-public class CheckinGit2 {
+public class ChekingGit2 {
 	
 	public static void main(String[] args) {
 		
