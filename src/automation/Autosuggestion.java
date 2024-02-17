@@ -16,6 +16,7 @@ public class AutoSuggestion {
 		driver.manage().window().maximize();
 		
 		driver.get("https://www.facebook.com");
+		
 		driver.findElement(By.linkText("Create new account")).click();
 		
 		Thread.sleep(2000);

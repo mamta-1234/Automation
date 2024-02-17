@@ -16,7 +16,7 @@ public class ByClassName {
 				
 				driver.get("https://www.facebook.com/signup");
 				
-					WebElement alreadyHaveAccount = driver.findElement(By.className("_9bq5"));
+				WebElement alreadyHaveAccount = driver.findElement(By.className("_9bq5"));
 					
 					alreadyHaveAccount.click();
 			}
